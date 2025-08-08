@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+body{
+    background-color: black;
+}
+div{
+    /* margin-top: 90p\x; */
+    padding: 50px;
+    font-size: 50px;
+    font-family: 'Monoton',cursive;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 100px red,0 0 20px firebrick,0 0 10px darkred;
+    color: red;
+}
+
+#error:hover{
+    text-shadow: 0 0 200px white,0 0  80px green, 0 0 80px blue;
+}
+#code:hover{
+    text-shadow: 0 0 80px red,0 0 80px firebrick,0 0 80px darkred;
+}
+#error{
+    color: #fff;
+    text-shadow: 0 0 60px brown, 0 0 90px green,0 0 10px blue;
+}
+#error span{
+    animation: upper 6s linear infinite;
+}
+#code span:nth-of-type(2){
+    animation: lower 9s linear infinite;
+}
+#code span:nth-of-type(1){
+    text-shadow: none;
+    opacity: 0.7;
+}
+@keyframes upper{
+    0%, 19.999%,22%,62.999%,64.99%,70%,100%{
+        opacity: 0.5;
+        text-shadow: 0 0 80px white,0 0 80px green,0 0 6px blue;
+    }
+    20%,21.99%,63%,63.99%,65%,69.99%{
+        opacity: 0.4;
+        text-shadow: none;
+    }
+}
+@keyframes lower{
+    0%, 19.999%,22%,62.999%,64.99%,70%,100%{
+        opacity: 0.99;
+        text-shadow: 0 0 80px red,0 0 30px firebrick,0 0 6px darkred;
+    }
+    20%,21.99%,63%,63.99%,65%,69.99%{
+        opacity: 0.4;
+        text-shadow:none;
+    }
+}
